@@ -1,0 +1,27 @@
+{
+  "name": "lukeprodata",
+  "version": "1.0.0",
+  "description": "This is my college project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukecheeseman1/LukeProData.git"
+  },
+  "author": "Luke Cheeseman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukecheeseman1/LukeProData/issues"
+  },
+  "homepage": "https://github.com/lukecheeseman1/LukeProData#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "bower": "^1.8.2",
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "jsdom": "^11.5.1"
+  }
+}

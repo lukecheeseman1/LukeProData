@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lukes Music Site</title>
+
+    <body>
+
+        <h1>My Music Site</h1>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-kwkqQ7fZB5Z1oUZHYnI1NTELpNDXw1p2IoxBpi1QGzK62+u6LMHRBmD1ZzBxCoD+" crossorigin="anonymous">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $("#homeButton").click(function() {
+                    $.get("/index", function(data, status) {
+                        $("#Music").text(data);
+                    });
+                });
+            });
+
+            $(document).ready(function() {
+                $("#technoButton").click(function() {
+                    $.get("/techno", function(data, status) {
+                        $("#Music").text(data);
+                    });
+                });
+            });
+
+            $(document).ready(function() {
+                $("#houseButton").click(function() {
+                    $.get("/house", function(data, status) {
+                        $("#Music").text(data);
+                    });
+                });
+            });
+
+            $(document).ready(function() {
+                $("#eventsButton").click(function() {
+                    $.get("/events", function(data, status) {
+                        $("#Music").html(data);
+                    });
+                });
+            });
+
+            $(document).ready(function() {
+                $("#eventsButton").click(function() {
+                    $.get("/events.html", function(data, status) {
+
+                    });
+                });
+            });
+
+            $(document).ready(function() {
+                $("#technoButton").click(function() {
+                    $.get("/techno", function(data, status) {
+                        $("#Music").html(data);
+                    });
+                });
+            });
+
+            $(document).ready(function() {
+                $("#houseButton").click(function() {
+                    $.get("/house", function(data, status) {
+                        $("#Music").html(data);
+                    });
+                });
+            });
+        </script>
+
+
+</head>
+
+<input type="submit" name="index" id="homeButton" value="HOME">
+<input type="submit" name="techno" id="technoButton" value="TECHNO">
+<input type="submit" name="house" id="houseButton" value="HOUSE">
+<input type="submit" name="events" id="eventsButton" value="EVENTS">
+<div id="Music">
+
+    <P>This website is created to show you influencial artist from 4 different music genres</p>
+    <h1>Techno</h1> <br>
+    <h1>House</h1> <br>
+
+    <h2>Why music is important </h2>
+    <p>
+        Music gives people a way to express who they are inside through many different forms. Whether it be being a musician (singer, rapper, instrumentalist), being in a band with other people, teaching music to other people, or anything that you can think of,
+        you can be exactly who you are or who you want to be through music. Many people today hide who they are on the inside to try to fit in with everyone else because some people are afraid of being rejected by those around them. They hide in the crowd
+        until they are alone and can be who they truly are without fear. Music is important because it gives people a way to express themselves and be who they are on the inside.
+    </P>
+    <p>Music also helps people communicate how they feel inside when they just can't find the words to say it. Sometimes, in our lives, it is difficult to say how we feel to other people, but with music we find the words that are missing and the messages
+        that we are trying to tell people. We all can find the words that we are looking for by either writing songs or just listening to different songs on the radio or anywhere we are. I know when I have trouble finding the words that I want to say
+        to people, I write songs to express how I feel about them or different things in life. Music is important because music helps us find the words we can't say.
+    </p>
+</div>
+
+</body>
+
+</html>
